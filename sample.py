@@ -1,4 +1,4 @@
-a=1
-b=1
+a=30
+b=55
 c=a+b
 print("result is", c)
