@@ -7,12 +7,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # Set up Chrome options for GitHub Actions
 chrome_options = Options()
-chrome_options.add_argument("--headless")  # Run in headless mode (no GUI)
-chrome_options.add_argument("--no-sandbox")  # Required for CI/CD environments
-chrome_options.add_argument("--disable-dev-shm-usage")  # Prevent shared memory issues
-chrome_options.add_argument("--disable-gpu")  # Disable GPU acceleration
-chrome_options.add_argument("--window-size=1920x1080")  # Set window size
-chrome_options.add_argument("--remote-debugging-port=9222")  # Debugging port
+chrome_options.add_argument("--headless")  
+chrome_options.add_argument("--no-sandbox")  
+chrome_options.add_argument("--disable-dev-shm-usage")  
+chrome_options.add_argument("--disable-gpu")  
+chrome_options.add_argument("--window-size=1920x1080")  
+chrome_options.add_argument("--remote-debugging-port=9222")  
 
 # Initialize WebDriver
 service = Service(ChromeDriverManager().install())
